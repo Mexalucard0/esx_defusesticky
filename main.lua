@@ -22,7 +22,6 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 			if IsEntityAVehicle(veh) then
 				if checkbomb then
-					DrawText3D(pos.x,pos.y,pos.z, "Bombayi cözmek icin [E] basiniz")
 					if IsControlJustReleased(0, 38) then
 						RemoveAllStickyBombsFromEntity(veh)
 						
